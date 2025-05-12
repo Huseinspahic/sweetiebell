@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5 {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(255, 159, 178, 0.1), rgba(255, 159, 178, 0.2)), url('static/images/serving cake.png');
+    background: linear-gradient(rgba(255, 159, 178, 0.1), rgba(255, 159, 178, 0.2)), url('https://github.com/Huseinspahic/sweetiebell/blob/main/static/images/serving%20cake.png?raw=true');
     background-size: cover;
     background-position: center;
     min-height: 80vh;
