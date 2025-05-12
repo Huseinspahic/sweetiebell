@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Sweetiebell Bakery - Delicious homemade cakes, muffins, and desserts">
+    
+    <!-- iOS specific meta tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Sweetiebell">
+    <link rel="apple-touch-icon" href="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/icons/cake.svg">
+    
+    <!-- PWA manifest -->
+    <link rel="manifest" href="/static/manifest.json">
+    
+    <title>Sweetiebell Bakery - Homemade Cakes and Desserts</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/icons/cake.svg" type="image/svg+xml">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playfair+Display:wght@400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                Sweetiebell
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/order">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Flash messages -->
+    
+        
+    
+
+    <!-- Main Content -->
+    
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 col-lg-6">
+                <div class="bg-light bg-opacity-75 p-4 p-md-5 rounded-4 shadow-sm">
+                    <h1 class="hero-title mb-3">Delicious <span class="text-primary">Handcrafted</span> Treats</h1>
+                    <p class="hero-subtitle mb-4">Sweetiebell brings you the perfect blend of flavor, beauty, and love in every bite.</p>
+                    <div class="d-flex gap-3">
+                        <a href="/products" class="btn btn-primary">Explore Our Menu</a>
+                        <a href="/order" class="btn btn-outline-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Products Section -->
+<section class="featured-section">
+    <div class="container">
+        <h2 class="text-center section-title mb-5">Our Featured Treats</h2>
+        <div class="row g-4">
+            
+            <div class="col-sm-6 col-lg-3">
+                <div class="product-card fade-in">
+                    <div class="product-img-container">
+                        <img src="https://pixabay.com/get/g6ff808090a64de3564820152030d404297f0cc9a54d3f4c458281af6caee96d0329a15aa2bc97e894bf0bf5a0e64da16adce4e39cfe807d1552ce77226d71447_1280.jpg" alt="Chocolate Cake" class="product-img">
+                    </div>
+                    <div class="p-3 text-center">
+                        <h3 class="product-title">Chocolate Cake</h3>
+                        <p class="text-muted mb-2">Rich, moist chocolate cake with a velvety ganache.</p>
+                        <p class="product-price mb-3">$35.99</p>
+                        <a href="/products/chocolate-cake" class="btn btn-outline-primary btn-sm">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-6 col-lg-3">
+                <div class="product-card fade-in">
+                    <div class="product-img-container">
+                        <img src="https://pixabay.com/get/ge66fdec480b886ebf5a6c6354eb7df33f14e28175febc8bf3d2b0a5d2fa92da08cb13a6c7780ed37531e38defd53ed0d74ca53a363e82c0f91d1695ed3f632e0_1280.jpg" alt="Blueberry Muffin" class="product-img">
+                    </div>
+                    <div class="p-3 text-center">
+                        <h3 class="product-title">Blueberry Muffin</h3>
+                        <p class="text-muted mb-2">Tender muffin packed with juicy blueberries.</p>
+                        <p class="product-price mb-3">$3.99</p>
+                        <a href="/products/blueberry-muffin" class="btn btn-outline-primary btn-sm">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-6 col-lg-3">
+                <div class="product-card fade-in">
+                    <div class="product-img-container">
+                        <img src="https://pixabay.com/get/gde3efb1437c7205f88d790ed9b6e3d4651202fc96efc4369dcc0befbea2b24a10b8fb4212dfd07ed057515b984d14481d909ef3991a62ae047ed38f259f1d896_1280.jpg" alt="Chocolate Éclair" class="product-img">
+                    </div>
+                    <div class="p-3 text-center">
+                        <h3 class="product-title">Chocolate Éclair</h3>
+                        <p class="text-muted mb-2">Choux pastry filled with cream and topped with chocolate.</p>
+                        <p class="product-price mb-3">$4.99</p>
+                        <a href="/products/chocolate-eclair" class="btn btn-outline-primary btn-sm">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-6 col-lg-3">
+                <div class="product-card fade-in">
+                    <div class="product-img-container">
+                        <img src="https://pixabay.com/get/g8c79243e2801f7e454c5b95891c75d861a85cfc97ac5fa86c4531ba33a8e942ed5650768f5410460e893b9a566a47107b03ed37a9ee938b0911e10f780c4ff4b_1280.jpg" alt="Red Velvet Cake" class="product-img">
+                    </div>
+                    <div class="p-3 text-center">
+                        <h3 class="product-title">Red Velvet Cake</h3>
+                        <p class="text-muted mb-2">Classic red velvet with cream cheese frosting.</p>
+                        <p class="product-price mb-3">$38.99</p>
+                        <a href="/products/red-velvet" class="btn btn-outline-primary btn-sm">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="text-center mt-5">
+            <a href="/products" class="btn btn-primary">View All Products</a>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="https://pixabay.com/get/ged3aa1789d7e6e04a391afbe73bb43c961e5c6283e247b2407159ea20e1800fc3d3e0d97f8cba1eea7f75f22eb588aaf2c7d1687e7939de3c6d479a9ae90009a_1280.jpg" alt="Bakery Interior" class="img-fluid about-img fade-in">
+            </div>
+            <div class="col-lg-6 fade-in">
+                <h2 class="section-title">Our Sweet Story</h2>
+                <p class="lead mb-4">Welcome to Sweetiebell, where passion meets perfection in every creation.</p>
+                <p class="mb-4">Founded in 2010, Sweetiebell began with a simple mission: to create delicious, handcrafted treats that bring joy to every occasion. Our founder, Isabella Bell, started baking in her grandmother's kitchen and turned her passion into the beloved bakery you see today.</p>
+                <p class="mb-4">We use only the finest ingredients, sourced locally whenever possible, to create our signature cakes, muffins, and desserts. Every item is made fresh daily with love and attention to detail.</p>
+                <a href="/about" class="btn btn-primary">Learn More About Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center section-title mb-5">What Our Customers Say</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="testimonial-card fade-in">
+                    <div class="mb-3">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                    </div>
+                    <p class="mb-3">"The chocolate cake was absolutely divine! Everyone at my daughter's birthday party loved it. Will definitely order again!"</p>
+                    <p class="fw-bold mb-0">- Sarah Johnson</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card fade-in">
+                    <div class="mb-3">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                    </div>
+                    <p class="mb-3">"Sweetiebell's muffins have become a staple at our office meetings. Always fresh, delicious, and delivered on time!"</p>
+                    <p class="fw-bold mb-0">- Michael Williams</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card fade-in">
+                    <div class="mb-3">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                    </div>
+                    <p class="mb-3">"I ordered the red velvet cake for my wedding anniversary, and it was spectacular! Not only beautiful but so moist and flavorful."</p>
+                    <p class="fw-bold mb-0">- Emily Davis</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-5 bg-primary-light">
+    <div class="container text-center">
+        <h2 class="mb-4">Ready to Order?</h2>
+        <p class="lead mb-4">Whether you're celebrating a special occasion or just treating yourself, we've got something sweet for you!</p>
+        <a href="/order" class="btn btn-primary">Order Now</a>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="footer-brand mb-4">Sweetiebell</h5>
+                    <p>Crafting delicious moments with our homemade cakes, muffins, and desserts since 2010.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-4">Hours</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Monday - Friday: 7am - 7pm</li>
+                        <li class="mb-2">Saturday: 8am - 8pm</li>
+                        <li class="mb-2">Sunday: 9am - 5pm</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-4">Contact</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Bakery Lane, Sweetville</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> (555) 123-4567</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@sweetiebell.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4" style="border-color: rgba(255,255,255,0.1);">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 Sweetiebell Bakery. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="footer-link me-3">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

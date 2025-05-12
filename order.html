@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Sweetiebell Bakery - Delicious homemade cakes, muffins, and desserts">
+    
+    <!-- iOS specific meta tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Sweetiebell">
+    <link rel="apple-touch-icon" href="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/icons/cake.svg">
+    
+    <!-- PWA manifest -->
+    <link rel="manifest" href="./static/manifest.json">
+    
+    <title>Order - Sweetiebell Bakery</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/icons/cake.svg" type="image/svg+xml">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playfair+Display:wght@400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                Sweetiebell
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./order.html">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Flash messages would normally be here - not needed for static site -->
+
+    <!-- Main Content -->
+    
+        
+<!-- Order Hero -->
+<section class="py-5 bg-primary-light">
+    <div class="container text-center">
+        <h1 class="display-4 mb-3">Place Your Order</h1>
+        <p class="lead">Fill out the form below to order your favorite treats</p>
+    </div>
+</section>
+
+<!-- Order Form -->
+<section class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="order-form fade-in">
+                    <form id="orderForm" class="needs-validation" novalidate>
+                        <div class="mb-4">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                            <div class="invalid-feedback">
+                                Please provide your name.
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid email address.
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" required>
+                            <div class="invalid-feedback">
+                                Please provide your phone number.
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="product" class="form-label">Select Product</label>
+                            <select class="form-select" id="product" name="product" required>
+                                <option value="" selected disabled>Choose a product...</option>
+                                <!-- Products will be loaded via JavaScript -->
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a product.
+                            </div>
+                        </div>
+                        
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <label for="quantity" class="form-label">Quantity</label>
+                                <input type="number" class="form-control" id="quantity" name="quantity" min="1" value="1" required>
+                                <div class="invalid-feedback">
+                                    Please specify a quantity.
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="date" class="form-label">Pickup/Delivery Date</label>
+                                <input type="date" class="form-control" id="date" name="date" required>
+                                <div class="invalid-feedback">
+                                    Please select a date.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="orderType" id="pickup" value="pickup" checked>
+                                <label class="form-check-label" for="pickup">
+                                    Pickup at Store
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="orderType" id="delivery" value="delivery">
+                                <label class="form-check-label" for="delivery">
+                                    Delivery (Additional fee may apply)
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4" id="deliveryAddressContainer" style="display: none;">
+                            <label for="address" class="form-label">Delivery Address</label>
+                            <textarea class="form-control" id="address" name="address" rows="3"></textarea>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="message" class="form-label">Special Instructions (Optional)</label>
+                            <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                        </div>
+                        
+                        <div class="mb-4 p-3 bg-light rounded">
+                            <h5>Order Summary</h5>
+                            <div class="d-flex justify-content-between">
+                                <span>Total:</span>
+                                <span id="totalDisplay">$0.00</span>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Submit Order</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Order Information -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="section-title mb-4">How It Works</h2>
+                <div class="row g-4 mb-5">
+                    <div class="col-md-4 fade-in">
+                        <div class="bg-white p-4 rounded-4 shadow-sm h-100">
+                            <div class="mb-3">
+                                <i class="fas fa-clipboard-list text-primary" style="font-size: 2rem;"></i>
+                            </div>
+                            <h4>1. Place Your Order</h4>
+                            <p class="text-muted">Fill out our simple order form with your details and product selection.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 fade-in">
+                        <div class="bg-white p-4 rounded-4 shadow-sm h-100">
+                            <div class="mb-3">
+                                <i class="fas fa-phone text-primary" style="font-size: 2rem;"></i>
+                            </div>
+                            <h4>2. Confirmation</h4>
+                            <p class="text-muted">We'll contact you to confirm your order details and payment.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 fade-in">
+                        <div class="bg-white p-4 rounded-4 shadow-sm h-100">
+                            <div class="mb-3">
+                                <i class="fas fa-birthday-cake text-primary" style="font-size: 2rem;"></i>
+                            </div>
+                            <h4>3. Enjoy!</h4>
+                            <p class="text-muted">Pick up your order or have it delivered on your selected date.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h5 class="mb-3">Order Policies</h5>
+                <ul class="list-unstyled text-start">
+                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Orders must be placed at least 48 hours in advance</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Custom cakes may require additional time</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> 50% deposit required for orders over $100</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Delivery available within 15 miles of our location</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Load product data from JSON file
+    document.addEventListener('DOMContentLoaded', async function() {
+        try {
+            const response = await fetch('./static/products.json');
+            if (!response.ok) {
+                throw new Error('Failed to load products data');
+            }
+            
+            const data = await response.json();
+            const products = data.all_products;
+            const productSelect = document.getElementById('product');
+            
+            // Populate product dropdown
+            products.forEach(product => {
+                const option = document.createElement('option');
+                option.value = product.id;
+                option.setAttribute('data-price', product.price);
+                option.textContent = `${product.name} - $${product.price.toFixed(2)}`;
+                productSelect.appendChild(option);
+            });
+        } catch (error) {
+            console.error('Error loading products:', error);
+        }
+        
+        // Show/hide delivery address based on selection
+        const deliveryRadio = document.getElementById('delivery');
+        const pickupRadio = document.getElementById('pickup');
+        const deliveryAddressContainer = document.getElementById('deliveryAddressContainer');
+        const addressInput = document.getElementById('address');
+        
+        deliveryRadio.addEventListener('change', function() {
+            if (this.checked) {
+                deliveryAddressContainer.style.display = 'block';
+                addressInput.setAttribute('required', '');
+            }
+        });
+        
+        pickupRadio.addEventListener('change', function() {
+            if (this.checked) {
+                deliveryAddressContainer.style.display = 'none';
+                addressInput.removeAttribute('required');
+            }
+        });
+        
+        // Set min date for date picker
+        setMinDate();
+    });
+</script>
+
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="footer-brand mb-4">Sweetiebell</h5>
+                    <p>Crafting delicious moments with our homemade cakes, muffins, and desserts since 2010.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-4">Hours</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Monday - Friday: 7am - 7pm</li>
+                        <li class="mb-2">Saturday: 8am - 8pm</li>
+                        <li class="mb-2">Sunday: 9am - 5pm</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-4">Contact</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Bakery Lane, Sweetville</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> (555) 123-4567</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@sweetiebell.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4" style="border-color: rgba(255,255,255,0.1);">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 Sweetiebell Bakery. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="footer-link me-3">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="./static/js/main.js"></script>
+    <script src="./static/js/static-forms.js"></script>
+</body>
+</html>

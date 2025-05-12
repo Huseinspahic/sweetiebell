@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Sweetiebell Bakery - Delicious homemade cakes, muffins, and desserts">
+    
+    <!-- iOS specific meta tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Sweetiebell">
+    <link rel="apple-touch-icon" href="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/icons/cake.svg">
+    
+    <!-- PWA manifest -->
+    <link rel="manifest" href="/static/manifest.json">
+    
+    <title>Red Velvet Cake - Sweetiebell Bakery</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/icons/cake.svg" type="image/svg+xml">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playfair+Display:wght@400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                Sweetiebell
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/order">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Flash messages -->
+    
+        
+    
+
+    <!-- Main Content -->
+    
+<!-- Product Detail -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="https://pixabay.com/get/g8c79243e2801f7e454c5b95891c75d861a85cfc97ac5fa86c4531ba33a8e942ed5650768f5410460e893b9a566a47107b03ed37a9ee938b0911e10f780c4ff4b_1280.jpg" alt="Red Velvet Cake" class="img-fluid product-detail-img fade-in">
+            </div>
+            <div class="col-lg-6 fade-in">
+                <nav aria-label="breadcrumb" class="mb-4">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/products">Products</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Red Velvet Cake</li>
+                    </ol>
+                </nav>
+                
+                <h1 class="mb-3">Red Velvet Cake</h1>
+                <p class="product-price fs-4 mb-4">$38.99</p>
+                <div class="mb-4">
+                    <h5>Description</h5>
+                    <p>Classic red velvet with cream cheese frosting.</p>
+                </div>
+                
+                
+                <div class="mb-4">
+                    <h5>Details</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> 8" round cake (serves 10-12 people)</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Made fresh to order</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Available with custom inscriptions</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Special dietary options available upon request</li>
+                    </ul>
+                </div>
+                
+                
+                <div class="d-flex gap-3">
+                    <a href="/order" class="btn btn-primary">Order Now</a>
+                    <a href="/products" class="btn btn-outline-primary">Back to Products</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Related Products -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center section-title mb-5">You Might Also Like</h2>
+        <div class="row g-4">
+            
+            
+                
+                    
+                    <div class="col-sm-6 col-lg-3 fade-in">
+                        <div class="product-card">
+                            <div class="product-img-container">
+                                <img src="https://pixabay.com/get/g6ff808090a64de3564820152030d404297f0cc9a54d3f4c458281af6caee96d0329a15aa2bc97e894bf0bf5a0e64da16adce4e39cfe807d1552ce77226d71447_1280.jpg" alt="Chocolate Cake" class="product-img">
+                            </div>
+                            <div class="p-3 text-center">
+                                <h3 class="product-title">Chocolate Cake</h3>
+                                <p class="product-price mb-3">$35.99</p>
+                                <a href="/products/chocolate-cake" class="btn btn-outline-primary btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                
+            
+                
+            
+                
+                    
+                    <div class="col-sm-6 col-lg-3 fade-in">
+                        <div class="product-card">
+                            <div class="product-img-container">
+                                <img src="https://pixabay.com/get/g99f68e510efffe600e8f66cd2d407d41292120b192e7d3f4f3f1bded104116ffde87d31ca082bc80cfa165fb8a085b7fdf1ffa7decc7643c3c5774e3ed7e4e1a_1280.jpg" alt="Carrot Cake" class="product-img">
+                            </div>
+                            <div class="p-3 text-center">
+                                <h3 class="product-title">Carrot Cake</h3>
+                                <p class="product-price mb-3">$32.99</p>
+                                <a href="/products/carrot-cake" class="btn btn-outline-primary btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                
+            
+                
+                    
+                    <div class="col-sm-6 col-lg-3 fade-in">
+                        <div class="product-card">
+                            <div class="product-img-container">
+                                <img src="https://pixabay.com/get/ge95be845c5d38b3d599aa1ff7928302ff2f8b733c95c1bac2f524dd7a3dd99bc4dbc405c32dc0497a82c785120fa79f772a3ec7dce129b27efa3498b7e435cfe_1280.jpg" alt="Classic Cheesecake" class="product-img">
+                            </div>
+                            <div class="p-3 text-center">
+                                <h3 class="product-title">Classic Cheesecake</h3>
+                                <p class="product-price mb-3">$40.99</p>
+                                <a href="/products/cheesecake" class="btn btn-outline-primary btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="footer-brand mb-4">Sweetiebell</h5>
+                    <p>Crafting delicious moments with our homemade cakes, muffins, and desserts since 2010.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-4">Hours</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Monday - Friday: 7am - 7pm</li>
+                        <li class="mb-2">Saturday: 8am - 8pm</li>
+                        <li class="mb-2">Sunday: 9am - 5pm</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-4">Contact</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Bakery Lane, Sweetville</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> (555) 123-4567</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@sweetiebell.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4" style="border-color: rgba(255,255,255,0.1);">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 Sweetiebell Bakery. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="footer-link me-3">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

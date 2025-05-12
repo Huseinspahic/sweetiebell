@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - Sweetiebell Bakery</title>
+    <link rel="stylesheet" href="./static/css/style.css">
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .error-container {
+            max-width: 500px;
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+        .error-message {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #ff8da3;
+            transform: translateY(-2px);
+        }
+    </style>
+    <!-- Redirection script for SPA behavior in GitHub Pages -->
+    <script>
+        // Redirect to index.html while preserving the URL for SPA navigation
+        window.location.replace("./index.html");
+    </script>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-code">404</div>
+        <div class="error-message">Oops! We couldn't find the page you were looking for.</div>
+        <a href="./index.html" class="btn">Return to Home</a>
+    </div>
+</body>
+</html>

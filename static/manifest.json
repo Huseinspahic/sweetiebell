@@ -1,0 +1,16 @@
+{
+  "name": "Sweetiebell Bakery",
+  "short_name": "Sweetiebell",
+  "description": "Delicious cakes, muffins, and desserts from Sweetiebell Bakery",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff9f9",
+  "theme_color": "#ff9fb2",
+  "icons": [
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/icons/cake.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
+  ]
+}
