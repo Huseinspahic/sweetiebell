@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .bg-light {
-    background-color: var(--light) !important;
+    background-color: #fff9f985 !important;
 }
 
 /* Navigation */
