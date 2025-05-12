@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5 {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(255, 159, 178, 0.1), rgba(255, 159, 178, 0.2)), url('https://pixabay.com/get/g2d0a01428d4e8f51f4e52b7595f4a2539315219cd9773886d141c71082718aea409268b1aca833b7855ea428fd0e61a1982782b4411a68e0d401e6132da18312_1280.jpg');
+    background: linear-gradient(rgba(255, 159, 178, 0.1), rgba(255, 159, 178, 0.2)), url('static/images/serving cake.png');
     background-size: cover;
     background-position: center;
     min-height: 80vh;
